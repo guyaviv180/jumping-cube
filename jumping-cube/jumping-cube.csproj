@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="skins\chess.png" />
+    <Content Include="index.html" />
     <Content Include="skins\gadi_kapsanoni.PNG" />
     <Content Include="graphics.js" />
+    <Content Include="skins\green_flannel.jpeg" />
+    <Content Include="skins\red_flannel.jpeg" />
     <Content Include="skins\whale.png" />
+    <Content Include="skins\white_flannel.jpeg" />
     <Content Include="Web.config" />
     <Content Include="game.aspx" />
     <Content Include="skins\wood.jpg" />

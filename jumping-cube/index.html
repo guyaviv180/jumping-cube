@@ -1,7 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="game.aspx.cs" Inherits="jumping_cube.WebForm1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
     <div style="display:none">
         <img id="wood" width="50" height="50" src="skins/wood.jpg" />
         <img id="gadi_kapsanoni" width="50" height="50" src="skins/gadi_kapsanoni.PNG" />
@@ -12,7 +15,7 @@
         <img id="white_flannel" width="50" height="50" src="skins/white_flannel.jpeg" />
     </div>
     <script src="graphics.js"></script>
-    <button id="1" type="button" onclick="game(wood)"><img src="skins/wood.jpg" height="50" width="50" /></button> 
+    <button id="1" type="button" onclick="game(wood)"><img src="skins/wood.jpg" height="50" width="50" /></button>
     <button id="2" type="button" onclick="game(zviki)"><img src="skins/zviki.PNG" height="50" width="50" /></button>
     <button id="3" type="button" onclick="game(gadi_kapsanoni)"><img src="skins/gadi_kapsanoni.PNG" height="50" width="50" /></button>
     <button id="4" type="button" onclick="game(whale)"><img src="skins/whale.png" height="50" width="50" /></button>
@@ -155,4 +158,5 @@
             }
         }
     </script>
-</asp:Content>
+</body>
+</html>
