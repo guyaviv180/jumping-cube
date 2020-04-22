@@ -70,6 +70,7 @@
     <Content Include="skins\chess.png" />
     <Content Include="skins\gadi_kapsanoni.PNG" />
     <Content Include="graphics.js" />
+    <Content Include="skins\whale.png" />
     <Content Include="Web.config" />
     <Content Include="game.aspx" />
     <Content Include="skins\wood.jpg" />

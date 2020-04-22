@@ -8,6 +8,7 @@
         <img id="gadi_kapsanoni" width="50" height="50" src="skins/gadi_kapsanoni.PNG" />
         <img id="zviki" width="50" height="50" src="skins/zviki.PNG" />
         <img id="chess" width="50" height="50" src="skins/chess.PNG" />
+        <img id="whale" width="50" height="50" src="skins/whale.PNG" />
     </div>
     <script src="graphics.js"></script>
 
@@ -17,6 +18,7 @@
     <button id="2" type="button" onclick="game(zviki)"><img src="skins/zviki.PNG" height="50" width="50" /></button>
     <button id="3" type="button" onclick="game(gadi_kapsanoni)"><img src="skins/gadi_kapsanoni.PNG" height="50" width="50" /></button>
     <button id="4" type="button" onclick="game(chess)"><img src="skins/chess.PNG" height="50" width="50" /></button>
+    <button id="5" type="button" onclick="game(whale)"><img src="skins/whale.PNG" height="50" width="50" /></button>
 
     <br />
 
@@ -49,6 +51,7 @@
             document.getElementById("2").disabled = true;
             document.getElementById("3").disabled = true;
             document.getElementById("4").disabled = true;
+            document.getElementById("5").disabled = true;
             addEventListener("keydown", onKeyDown);
             addEventListener("keyup", onKeyUp);
 
@@ -113,7 +116,7 @@
             function moveObstacle() {
                 if (obstacleX + obstacleWidth < 0) {
                     createObstacle();
-                    obstacleSpeed += 0.5
+                    obstacleSpeed += 0.3
                 }
                 obstacleX -= obstacleSpeed;
                 if ((cubeX + cubeWidth) >= obstacleX && cubeX <= (obstacleX + obstacleWidth) && (cubeY + cubeHeight) >= obstacleY && cubeY <= (obstacleY + obstacleHeight)) {
