@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="gadi_kapsanoni.PNG" />
     <Content Include="graphics.js" />
-    <Content Include="start_page.html" />
     <Content Include="Web.config" />
     <Content Include="game.aspx" />
     <Content Include="wood.jpg" />
