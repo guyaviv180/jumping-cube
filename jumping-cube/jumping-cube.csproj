@@ -67,12 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gadi_kapsanoni.PNG" />
+    <Content Include="skins\chess.png" />
+    <Content Include="skins\gadi_kapsanoni.PNG" />
     <Content Include="graphics.js" />
     <Content Include="Web.config" />
     <Content Include="game.aspx" />
-    <Content Include="wood.jpg" />
-    <Content Include="zviki.PNG" />
+    <Content Include="skins\wood.jpg" />
+    <Content Include="skins\zviki.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

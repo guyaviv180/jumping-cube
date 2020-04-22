@@ -4,18 +4,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div style="display:none">
-        <img id="wood" width="50" height="50" src="wood.jpg" />
-    </div>
-    <div style="display:none">
-        <img id="gadi_kapsanoni" width="50" height="50" src="gadi_kapsanoni.PNG" />
-    </div>
-    <div style="display:none">
-        <img id="zviki" width="50" height="50" src="zviki.PNG" />
+        <img id="wood" width="50" height="50" src="skins/wood.jpg" />
+        <img id="gadi_kapsanoni" width="50" height="50" src="skins/gadi_kapsanoni.PNG" />
+        <img id="zviki" width="50" height="50" src="skins/zviki.PNG" />
+        <img id="chess" width="50" height="50" src="skins/chess.PNG" />
     </div>
     <script src="graphics.js"></script>
 
-    <button id="1" type="button" onclick="game(wood)"><img src="wood.jpg" height="50" width="50" /></button> 
-    <button id="2" type="button" onclick="game(zviki)"><img src="zviki.PNG" height="50" width="50" /></button> <br />
+
+
+    <button id="1" type="button" onclick="game(wood)"><img src="skins/wood.jpg" height="50" width="50" /></button> 
+    <button id="2" type="button" onclick="game(zviki)"><img src="skins/zviki.PNG" height="50" width="50" /></button>
+    <button id="3" type="button" onclick="game(gadi_kapsanoni)"><img src="skins/gadi_kapsanoni.PNG" height="50" width="50" /></button>
+    <button id="4" type="button" onclick="game(chess)"><img src="skins/chess.PNG" height="50" width="50" /></button>
+
+    <br />
 
     <canvas id="myCanvas" width="600" height="300" style="background-color:lightblue"></canvas>
 
@@ -30,7 +33,6 @@
             var cubeY = document.getElementById("myCanvas").height - cubeHeight;
             var score = 0;
             var obstacleSpeed = 10;
-            var gameStart = false;
             var spaceKey = false;
 
             canvas = document.getElementById("myCanvas");
@@ -45,6 +47,8 @@
             }, 1000 / fps)
             document.getElementById("1").disabled = true;
             document.getElementById("2").disabled = true;
+            document.getElementById("3").disabled = true;
+            document.getElementById("4").disabled = true;
             addEventListener("keydown", onKeyDown);
             addEventListener("keyup", onKeyUp);
 
@@ -129,7 +133,6 @@
             }
 
             function drawPlayer() {
-                //var image = document.getElementById("zviki");
                 context.drawImage(image, cubeX, cubeY, 50, 50);
             }
 
