@@ -72,7 +72,7 @@
     <Content Include="graphics.js" />
     <Content Include="skins\green_flannel.jpeg" />
     <Content Include="skins\red_flannel.jpeg" />
-    <Content Include="skins\whale.PNG" />
+    <Content Include="skins\whale.png" />
     <Content Include="skins\white_flannel.jpeg" />
     <Content Include="Web.config" />
     <Content Include="game.aspx" />
