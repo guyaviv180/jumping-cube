@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="display:none">
+    <div style="display:none"
         <img id="wood" width="50" height="50" src="skins/wood.jpg" />
         <img id="gadi_kapsanoni" width="50" height="50" src="skins/gadi_kapsanoni.PNG" />
         <img id="zviki" width="50" height="50" src="skins/zviki.PNG" />
@@ -26,8 +26,8 @@
     <script>
         canvas = document.getElementById("myCanvas");
         context = canvas.getContext("2d");
-        drawText(50, 150, "40px press start", "white", "Choose a skin to start playing");
-        drawText(100, 200, "40px press start", "white", "Press spacebar to jump ")
+        drawText(50, 150, "40px Times New Roman", "white", "Choose a skin to start playing");
+        drawText(100, 200, "40px Times New Roman", "white", "Press spacebar to jump ")
     </script>
 
     <script>
